@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://systems/procedural_map/test/test_region_stream.gd" id="1"]
+
+[node name="TestRegionStream" type="Node"]
+script = ExtResource("1")

@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://d1bq0o8xgpurl"]
+
+[ext_resource type="Script" uid="uid://bmitumfhebq2u" path="res://systems/procedural_map/test/vivero.gd" id="1"]
+[ext_resource type="Script" uid="uid://bfvjvc67a7qab" path="res://systems/procedural_map/vegetation/config/flora_config.gd" id="2"]
+[ext_resource type="Script" uid="uid://mct51juutfe8" path="res://systems/procedural_map/vegetation/config/bark_style.gd" id="2_1v40j"]
+[ext_resource type="Script" uid="uid://hgpweprg6onk" path="res://systems/procedural_map/vegetation/config/leaf_style.gd" id="3_dsvtn"]
+[ext_resource type="Script" uid="uid://idbhqssnoj8" path="res://systems/procedural_map/vegetation/config/leaf_type_style.gd" id="4_ug1ia"]
+[ext_resource type="Script" uid="uid://bd507uqosychg" path="res://systems/procedural_map/vegetation/config/flora_lod_style.gd" id="5_sx0rn"]
+[ext_resource type="Script" uid="uid://blc7ykjv0fbc4" path="res://systems/procedural_map/vegetation/config/bark_type_style.gd" id="7_d7qtc"]
+
+[sub_resource type="Resource" id="Resource_7njte"]
+script = ExtResource("2_1v40j")
+metadata/_custom_type_script = "uid://mct51juutfe8"
+
+[sub_resource type="Resource" id="Resource_0x78g"]
+script = ExtResource("3_dsvtn")
+method = 2
+metadata/_custom_type_script = "uid://hgpweprg6onk"
+
+[sub_resource type="Resource" id="Resource_mb38t"]
+resource_name = "acacia"
+script = ExtResource("4_ug1ia")
+leaf_type = "acacia"
+usada_por = "quebracho, chanar, espinillo, dry_bush, hideout_bush_dry"
+
+[sub_resource type="Resource" id="Resource_djls2"]
+resource_name = "araucaria"
+script = ExtResource("4_ug1ia")
+leaf_type = "araucaria"
+usada_por = "araucaria"
+
+[sub_resource type="Resource" id="Resource_4obdx"]
+resource_name = "blossom_pink"
+script = ExtResource("4_ug1ia")
+leaf_type = "blossom_pink"
+usada_por = "lapacho, palo_borracho"
+
+[sub_resource type="Resource" id="Resource_1mray"]
+resource_name = "blossom_red"
+script = ExtResource("4_ug1ia")
+leaf_type = "blossom_red"
+usada_por = "ceibo, notro"
+
+[sub_resource type="Resource" id="Resource_q038b"]
+resource_name = "blossom_yellow"
+script = ExtResource("4_ug1ia")
+leaf_type = "blossom_yellow"
+usada_por = "lapacho_amarillo, ibira_pita, calafate"
+
+[sub_resource type="Resource" id="Resource_uwuq7"]
+resource_name = "broadleaf"
+script = ExtResource("4_ug1ia")
+leaf_type = "broadleaf"
+usada_por = "aspen, black_oak, silver_birch, palo_rosa, ombu, peteribi, leafy_bush, hideout_bush"
+
+[sub_resource type="Resource" id="Resource_txw3c"]
+resource_name = "feathery"
+script = ExtResource("4_ug1ia")
+leaf_type = "feathery"
+usada_por = "algarrobo, cedro, anchico, timbo, incienso, tipa"
+
+[sub_resource type="Resource" id="Resource_4ut84"]
+resource_name = "laurel"
+script = ExtResource("4_ug1ia")
+leaf_type = "laurel"
+usada_por = "guatambu, laurel, yerba_mate"
+
+[sub_resource type="Resource" id="Resource_o288h"]
+resource_name = "palmate"
+script = ExtResource("4_ug1ia")
+leaf_type = "palmate"
+usada_por = "ambay"
+
+[sub_resource type="Resource" id="Resource_wtunr"]
+resource_name = "pine"
+script = ExtResource("4_ug1ia")
+leaf_type = "pine"
+usada_por = "balsam_fir, small_pine, juniper, cipres_cordillera, neneo"
+
+[sub_resource type="Resource" id="Resource_xmifi"]
+resource_name = "small_round"
+script = ExtResource("4_ug1ia")
+leaf_type = "small_round"
+usada_por = "coihue, tala, arrayan, nire, quebracho_blanco, maiten"
+
+[sub_resource type="Resource" id="Resource_j3a0d"]
+script = ExtResource("5_sx0rn")
+metadata/_custom_type_script = "uid://bd507uqosychg"
+
+[sub_resource type="Resource" id="Resource_wgjta"]
+script = ExtResource("3_dsvtn")
+method = 2
+metadata/_custom_type_script = "uid://hgpweprg6onk"
+
+[sub_resource type="Resource" id="Resource_vvltn"]
+resource_name = "fissured"
+script = ExtResource("7_d7qtc")
+bark_type = "fissured"
+usada_por = "aspen, black_oak, juniper, lapacho, lapacho_amarillo, ceibo, palo_rosa, ombu, algarrobo, cedro, timbo, laurel, incienso, peteribi, ibira_pita, quebracho, espinillo, tala, tipa, leafy_bush, dry_bush, hideout_bush, hideout_bush_dry, calafate, neneo"
+
+[sub_resource type="Resource" id="Resource_4xdjb"]
+resource_name = "lenticel"
+script = ExtResource("7_d7qtc")
+bark_type = "lenticel"
+usada_por = "silver_birch, coihue, yerba_mate, nire, notro, quebracho_blanco, maiten"
+
+[sub_resource type="Resource" id="Resource_8h84i"]
+resource_name = "scaly"
+script = ExtResource("7_d7qtc")
+bark_type = "scaly"
+usada_por = "balsam_fir, small_pine, araucaria, anchico, cipres_cordillera"
+
+[sub_resource type="Resource" id="Resource_m6og7"]
+resource_name = "smooth"
+script = ExtResource("7_d7qtc")
+bark_type = "smooth"
+usada_por = "guatambu, ambay, chanar, palo_borracho, arrayan"
+
+[sub_resource type="Resource" id="FloraConfigEmbebida"]
+script = ExtResource("2")
+hojas = Array[ExtResource("4_ug1ia")]([SubResource("Resource_mb38t"), SubResource("Resource_djls2"), SubResource("Resource_4obdx"), SubResource("Resource_1mray"), SubResource("Resource_q038b"), SubResource("Resource_uwuq7"), SubResource("Resource_txw3c"), SubResource("Resource_4ut84"), SubResource("Resource_o288h"), SubResource("Resource_wtunr"), SubResource("Resource_xmifi")])
+troncos = Array[ExtResource("7_d7qtc")]([SubResource("Resource_vvltn"), SubResource("Resource_4xdjb"), SubResource("Resource_8h84i"), SubResource("Resource_m6og7")])
+lod = SubResource("Resource_j3a0d")
+tree_leaf = SubResource("Resource_wgjta")
+bush_leaf = SubResource("Resource_0x78g")
+bark = SubResource("Resource_7njte")
+
+[node name="Vivero" type="Node3D" unique_id=517099418]
+script = ExtResource("1")
+flora_config = SubResource("FloraConfigEmbebida")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://systems/procedural_map/test/leaf_proof.gd" id="1"]
+
+[node name="LeafProof" type="Node3D"]
+script = ExtResource("1")
